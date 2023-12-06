@@ -93,7 +93,7 @@ def to_predict(result):
 
     # The azureml-model-deployment header will force the request to go to a specific deployment.
     # Remove this header to have the request observe the endpoint traffic rules
-    headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key), 'azureml-model-deployment': 'mobilenet-91-60-70-2' }
+    headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key), 'azureml-model-deployment': 'mobilenet-91-60-70-4' }
     df=pd.DataFrame()
     req = urllib.request.Request(url, body, headers)
 
